@@ -1,0 +1,49 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #462686;
+  --linkColor: #5c5c5c;
+  --shadow: 0px 3px 6px #00000015;
+  --textShadow: 0px 3px 6px #00000034;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  height: 10em;
+  padding: 0 5%;
+  .nav-links {
+    margin-left: auto;
+    width: 100%;
+    .right-nav-links {
+      margin-left: auto;
+      .btn {
+        padding: 0 2em !important;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+    .nav-link {
+      margin-left: 2em;
+      .link-icon {
+        height: 0.8em;
+        width: 0.8em;
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 5em;
+  min-height: 100vh;
+}
+footer {
+  min-height: 8em;
+  .copyright {
+    color: var(--linkColor);
+    font-size: 1.2em;
+  }
+}

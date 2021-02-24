@@ -1,0 +1,152 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #462686;
+  --linkColor: #5c5c5c;
+  --shadow: 0px 3px 6px #00000015;
+  --textShadow: 0px 3px 6px #00000034;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  height: 10em;
+  padding: 0 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav-links .nav-link {
+  margin-left: 2em;
+}
+
+.form-container {
+  margin-top: 5em;
+  min-height: 100vh;
+}
+
+.form-container .form {
+  width: 30%;
+  margin: auto;
+}
+
+.form-container .form .form-title {
+  text-align: center;
+}
+
+.form-container .form .form-title h3 {
+  font-size: 2.5em;
+  line-height: 2.5em;
+  font-weight: 300;
+}
+
+.form-container .form .form-title span {
+  font-size: 1.2em;
+  font-weight: 100 !important;
+}
+
+.form-container .form .group {
+  position: relative;
+  z-index: 0;
+  margin: 3em 0;
+}
+
+@media (max-width: 500px) {
+  .form-container .form .group {
+    margin: 1em 0;
+  }
+}
+
+.form-container .form .group .form-input-label {
+  color: grey;
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-bottom: 0.3em;
+  display: block;
+  font-weight: normal;
+}
+
+@media (max-width: 500px) {
+  .form-container .form .group .form-input-label {
+    font-size: 1.4em;
+  }
+}
+
+.form-container .form .group .form-input {
+  background: none;
+  background-color: transparent;
+  color: grey;
+  font-size: 1.8em;
+  padding: 0.5em 1em 0.5em 0.5em;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0.2em;
+  border: 0.12em solid grey;
+}
+
+.form-container .form .group .form-input:focus {
+  outline: none;
+}
+
+.form-container .form .group .showpass {
+  cursor: pointer;
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  right: 1em;
+  bottom: 1.2em;
+  z-index: 1;
+}
+
+.form-container .form .group input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+.form-container .form .btn {
+  margin: auto;
+  width: 100%;
+}
+
+.form-container .form .forgot-password {
+  outline: none;
+  margin: 2em 0;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: var(--secondaryColor);
+}
+
+.form-container .form .other-accounts {
+  margin-top: 6em;
+}
+
+.form-container .form .other-accounts p {
+  color: var(--linkColor);
+}
+
+.form-container .form .other-accounts .other-accounts-icons a {
+  padding: 0.5em;
+  margin: 0 0.5em;
+}
+
+.form-container .form .other-accounts .other-accounts-icons a .icon {
+  width: 2em;
+  height: 2em;
+}
+
+footer {
+  height: 8em;
+}
+
+footer .copyright {
+  color: var(--linkColor);
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=login.css.map */

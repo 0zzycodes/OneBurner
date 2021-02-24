@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneBurnerLogin</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <nav class="flex-vertical-center navbar">
+      <div class="logo-container"></div>
+      <ul class="flex-vertical-center nav-links">
+        <li class="nav-link"><a href="#">New Customer?</a></li>
+        <li class="nav-link btn">
+          <a href="#">Try For Free</a> <img src="" alt="" />
+        </li>
+      </ul>
+    </nav>
+    <div class="form-container">
+      <form class="form">
+        <div class="form-title">
+          <h3>Sign In</h3>
+          <span>Welcome Back!</span>
+        </div>
+        <div class="group">
+          <label class="form-input-label"> Email / Username </label>
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email-input"
+          />
+        </div>
+        <div class="group">
+          <label class="form-input-label"> Password </label>
+          <input
+            class="form-input"
+            type="password"
+            name="password"
+            id="password-input"
+          />
+          <img
+            class="showpass"
+            src="assets/visible.svg"
+            alt="Show Password Icon"
+          />
+        </div>
+        <!-- .button -->
+        <button class="btn">Log In</button>
+        <a href="#forgetPassword" class="forgot-password">Forget Password?</a>
+        <div class="flex-vertical-center other-accounts">
+          <p class="or-sign-in-with">-Or sign in with :</p>
+          <div class="flex-vertical-center other-accounts-icons">
+            <a href="#outlook">
+              <img src="assets/outlook.svg" alt="outlook icon" class="icon" />
+            </a>
+            <a href="#linkedin">
+              <img src="assets/linkedin.svg" alt="linkedin icon" class="icon" />
+            </a>
+            <a href="#google">
+              <img
+                src="assets/google-symbol.svg"
+                alt="google icon"
+                class="icon"
+              />
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer class="flex-center">
+      <p class="copyright">&copy; 2020 OneBurner.com. All Right Reserved.</p>
+    </footer>
+  </body>
+</html>

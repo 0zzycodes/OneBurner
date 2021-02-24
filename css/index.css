@@ -1,0 +1,61 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #462686;
+  --linkColor: #5c5c5c;
+  --shadow: 0px 3px 6px #00000015;
+  --textShadow: 0px 3px 6px #00000034;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  height: 10em;
+  padding: 0 5%;
+}
+
+.navbar .nav-links {
+  margin-left: auto;
+  width: 100%;
+}
+
+.navbar .nav-links .right-nav-links {
+  margin-left: auto;
+}
+
+.navbar .nav-links .right-nav-links .btn {
+  padding: 0 2em !important;
+}
+
+.navbar .nav-links .right-nav-links .btn a {
+  font-size: 1em;
+}
+
+.navbar .nav-links .nav-link {
+  margin-left: 2em;
+}
+
+.navbar .nav-links .nav-link .link-icon {
+  height: 0.8em;
+  width: 0.8em;
+  margin: 0 0.5em;
+}
+
+main {
+  margin-top: 5em;
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 8em;
+}
+
+footer .copyright {
+  color: var(--linkColor);
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=index.css.map */
