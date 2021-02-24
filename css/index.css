@@ -50,6 +50,52 @@ main {
   min-height: 100vh;
 }
 
+.hero {
+  padding: 0 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(100vh - 10em);
+}
+
+.hero .hero-text-content,
+.hero .hero-photo {
+  width: 50%;
+}
+
+.hero .hero-text-content .hook {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  color: var(--secondaryColor);
+}
+
+.hero .hero-text-content .sub-hook {
+  font-size: 1.4em;
+  color: var(--linkColor);
+  font-weight: 100;
+  margin: 2em 0;
+}
+
+.hero .hero-text-content .btn {
+  padding: 0 2em;
+  height: 3.5em;
+  width: 13em;
+  font-size: 1.2em;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.hero .hero-text-content .btn img {
+  height: 0.8em;
+  width: 0.8em;
+  margin-left: 0.8em;
+}
+
+.companies p {
+  text-align: center;
+  color: var(--linkColor);
+}
+
 footer {
   min-height: 8em;
 }
