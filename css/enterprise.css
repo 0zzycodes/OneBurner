@@ -163,6 +163,7 @@
 .tools {
   padding: 0 5%;
   margin-top: 15em;
+  padding-bottom: 8em;
 }
 
 .tools .tools-heading {
@@ -191,40 +192,32 @@
   width: 5em;
 }
 
-.contact-sales {
+.regions {
+  text-align: center;
   background-color: #f4f4f4;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 6em 0;
-  margin-top: 15em;
+  padding: 8em 0;
 }
 
-.contact-sales h2 {
-  text-align: center;
-  font-size: 2.8em;
-  line-height: 1.5em;
-  color: #5c5c5c;
+.regions .region-heading {
+  line-height: 3em;
+  font-size: 2.5em;
 }
 
-.contact-sales .cta {
-  width: 15em !important;
-  height: 3.8em;
-  -webkit-box-shadow: 0px 3px 6px #46268675;
-          box-shadow: 0px 3px 6px #46268675;
-  margin-top: 2.5em;
+.regions p {
+  font-size: 1.3em;
+  line-height: 2.5em;
+}
+
+.regions .map {
+  margin-top: 8em;
+}
+
+.regions .map svg {
+  width: 25%;
 }
 
 .testimonials {
-  margin-top: 15em;
+  margin-top: 8em;
 }
 
 .testimonials .testimonial {
@@ -280,5 +273,37 @@
 
 .testimonials .testimonial .author .info span {
   font-size: 1em;
+}
+
+.contact-sales {
+  background-color: #f4f4f4;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8em 0;
+  margin-top: 15em;
+}
+
+.contact-sales h2 {
+  text-align: center;
+  font-size: 2.6em;
+  line-height: 1.5em;
+  color: #5c5c5c;
+}
+
+.contact-sales .cta {
+  width: 15em !important;
+  height: 3.8em;
+  -webkit-box-shadow: 0px 3px 6px #46268675;
+          box-shadow: 0px 3px 6px #46268675;
+  margin-top: 2.5em;
 }
 /*# sourceMappingURL=enterprise.css.map */
