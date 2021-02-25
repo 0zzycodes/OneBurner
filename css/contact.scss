@@ -1,0 +1,157 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #462686;
+  --linkColor: #5c5c5c;
+  --shadow: 0px 3px 6px #00000015;
+  --textShadow: 0px 3px 6px #00000034;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+$smartphone-width: 500px;
+$sub-color: grey;
+$main-color: black;
+
+@mixin smartphone {
+  @media (max-width: #{$smartphone-width}) {
+    @content;
+  }
+}
+main {
+  padding: 0 5%;
+  margin: 13em 0;
+  .form-container,
+  .order-info {
+    width: 50%;
+  }
+  .form-container {
+    width: 90%;
+    padding: 5% 8%;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.267);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.267);
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.267);
+    .form {
+      .text-area {
+        height: 5em;
+      }
+      .btn {
+        margin-top: 1.5em;
+        height: 3em;
+      }
+    }
+  }
+  .other-info {
+    padding-left: 9em;
+
+    h2 {
+      font-size: 2.8em;
+      line-height: 3em;
+      color: var(--linkColor);
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      line-height: 1.5em;
+      color: var(--linkColor);
+    }
+    .offices {
+      .locations {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .country {
+          margin-bottom: 3em;
+          .title {
+            font-size: 1.3em;
+            text-transform: uppercase;
+            margin-bottom: 1.5em;
+          }
+          .street-address {
+            font-size: 1.1em;
+          }
+        }
+      }
+    }
+  }
+}
+.group {
+  position: relative;
+  z-index: 0;
+  margin: 1em 0;
+  @include smartphone() {
+    margin: 1em 0;
+  }
+
+  .form-input-label {
+    color: grey;
+    font-size: 1.1em;
+    font-weight: 100;
+    margin-bottom: 0.3em;
+    display: block;
+    font-weight: normal;
+    @include smartphone() {
+      font-size: 1.4em;
+    }
+  }
+
+  .form-input {
+    background: none;
+    background-color: transparent;
+    color: grey;
+    font-size: 1.8em;
+    padding: 0.5em 1em 0.5em 0.5em;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0.2em;
+    border: 0.12em solid grey;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .showpass {
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    right: 1em;
+    bottom: 1.2em;
+    z-index: 1;
+  }
+
+  input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+}
+.btn {
+  margin: auto;
+  width: 100%;
+}
+.forgot-password {
+  outline: none;
+  margin: 2em 0;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: var(--secondaryColor);
+}
+.other-accounts {
+  margin-top: 6em;
+  p {
+    color: var(--linkColor);
+  }
+  .other-accounts-icons {
+    a {
+      padding: 0.5em;
+      margin: 0 0.5em;
+      .icon {
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}

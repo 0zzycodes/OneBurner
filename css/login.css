@@ -16,13 +16,28 @@
 .navbar {
   height: 10em;
   padding: 0 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  width: 100%;
 }
 
-.navbar .nav-links .nav-link {
+.navbar .login-nav-links {
+  margin-left: auto !important;
+}
+
+.navbar .login-nav-links .nav-link {
   margin-left: 2em;
+}
+
+.navbar .login-nav-links .btn {
+  padding: 0 2em !important;
+}
+
+.navbar .login-nav-links .btn .link-icon {
+  height: 0.8em;
+  width: 0.8em;
+  margin: 0 0.5em;
 }
 
 .form-container {
@@ -142,10 +157,13 @@
 }
 
 footer {
-  height: 8em;
+  height: 8em !important;
+  padding: 0 !important;
 }
 
 footer .copyright {
+  padding: 0 !important;
+  margin: 0 !important;
   color: var(--linkColor);
   font-size: 1.2em;
 }
