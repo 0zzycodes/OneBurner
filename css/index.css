@@ -8,7 +8,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -21,8 +21,8 @@ main {
 .hero {
   padding: 0 5%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: calc(100vh - 10em);
 }
 
@@ -56,8 +56,8 @@ main {
 .companies .company-logos {
   margin: 4em 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .companies .company-logos .logo-wrapper img {
@@ -77,8 +77,8 @@ main {
   border: 0.2em solid var(--linkColor);
   border-radius: 0.4em;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .tabs .tabbar .tabbar-links .tabbar-link {
@@ -110,7 +110,7 @@ main {
 
 .tabs .manage-team {
   -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .tools {
@@ -129,7 +129,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 5em;
 }
 
@@ -161,15 +161,15 @@ main {
 
 .customer-support .illustration {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .customer-support .illustration .support-types .support-type {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 2em;
 }
 
@@ -214,11 +214,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 6em 0;
   margin-top: 15em;
 }
@@ -240,4 +240,3 @@ main {
   background-color: #1a0d33;
   margin-top: 2.5em;
 }
-/*# sourceMappingURL=index.css.map */

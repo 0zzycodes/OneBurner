@@ -8,7 +8,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -58,10 +58,10 @@ main .other-info p {
 
 main .other-info .offices .locations {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 main .other-info .offices .locations .country {
@@ -168,4 +168,3 @@ main .other-info .offices .locations .country .street-address {
   width: 2em;
   height: 2em;
 }
-/*# sourceMappingURL=contact.css.map */

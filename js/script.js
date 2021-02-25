@@ -1,24 +1,32 @@
 const dropdown = document.getElementById("dropdown-wrapper");
+const content = document.getElementById("dropdown-content");
 const drop = document.getElementById("drop-link");
 const span = document.getElementById("close");
+const wait = (timeout) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+};
+let endProcess = true;
 drop.onmouseenter = function () {
-  console.log("here");
   dropdown.classList.add("show");
 };
-drop.onmouseleave = function (event) {
-  console.log(event.target);
-  if (event.target == dropdown) {
-  }
+content.onmouseenter = function () {
+  dropdown.classList.add("show");
+  endProcess = false;
+};
+content.onmouseleave = function () {
+  endProcess = true;
   dropdown.classList.remove("show");
 };
-function hideDropdown() {
-  dropdown.classList.remove("show");
-}
-
-window.onclick = function (event) {
-  if (event.target == dropdown) {
-    dropdown.classList.remove("show");
-  }
+drop.onmouseleave = function () {
+  wait(500).then(() => {
+    if (endProcess) {
+      dropdown.classList.remove("show");
+    } else {
+      dropdown.classList.add("show");
+    }
+  });
 };
 
 function DropDown(el) {

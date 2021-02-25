@@ -8,7 +8,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -17,8 +17,8 @@
   height: 10em;
   padding: 0 5%;
   -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
   width: 100%;
 }
 
@@ -167,4 +167,3 @@ footer .copyright {
   color: var(--linkColor);
   font-size: 1.2em;
 }
-/*# sourceMappingURL=login.css.map */
